@@ -1,0 +1,255 @@
+{
+    "localizationName": "English",
+	"saveLabel": "Save game",
+	"loadLabel": "Load game",
+	"saveBtnLabel": "Save",
+	"loadBtnLabel": "Load",
+	"deleteBtnLabel": "Delete",
+	"actor1": "Unknown",
+	"actor2": "General",
+    "mainMenu": {
+        "btns": [
+            {
+                "internalName": "ButtonStart",
+                "value": "New game"
+            },
+            {
+                "internalName": "ButtonLoad",
+                "value": "Load game"
+            },
+            {
+                "internalName": "ButtonSettings",
+                "value": "Settings"
+            },
+            {
+                "internalName": "ButtonCredits",
+                "value": "Credits"
+            },
+            {
+                "internalName": "ButtonExit",
+                "value": "Exit"
+            }
+        ]
+    },
+    "settings": {
+        "panelBtns": [
+			{
+				"internalName": "ControlsSettings",
+				"value": "Controls"
+			},
+			{
+				"internalName": "AudioSettings",
+				"value": "Audio"
+			},
+			{
+				"internalName": "GraphicsSettings",
+				"value": "Graphics"
+			},
+			{
+				"internalName": "GameplaySettings",
+				"value": "Gameplay"
+			}
+		],
+        "controlPanelName": "Control settings",
+        "controls": [
+            {
+                "internalName": "CameraUp",
+                "value": "Camera Up"
+            },
+            {
+                "internalName": "CameraDown",
+                "value": "Camera Down"
+            },
+            {
+                "internalName": "CameraLeft",
+                "value": "Camera Left"
+            },
+            {
+                "internalName": "CameraRight",
+                "value": "Camera Right"
+            },
+            {
+                "internalName": "EndTurn",
+                "value": "End Turn"
+            },
+            {
+                "internalName": "OpenMenu",
+                "value": "Open Menu"
+            },
+            {
+                "internalName": "CancelAction",
+                "value": "Cancel Action"
+            }
+        ],
+        "audioPanelName": "Audio settings",
+        "audioBtns": [
+            {
+                "internalName": "unity_sound",
+                "value": "Audio usage"
+            }
+        ],
+        "gfxPanelName": "Graphic settings",
+        "gfxBtns": [
+            {
+                "internalName": "unity_quality",
+                "value": "Graphics quality"
+            }
+        ],
+		"gfxPresets":[
+			"Minimum",
+			"V. low",
+			"Low",
+			"Average",
+			"High",
+			"V. high",
+			"Maximum"
+		],
+        "gpPanelName": "Gameplay settings",
+        "gpBtns": [
+            {
+                "internalName": "unity_txt_language",
+                "value": "Language"
+            },
+			{
+                "internalName": "unity_borderscroll",
+                "value": "Mouse scroll"
+            },
+			{
+                "internalName": "unity_highlight",
+                "value": "Unit highlight"
+            }
+        ]
+    },
+    "gameplayField": {
+		"combatOutcome":{
+			"labelAccuracy": "Accuracy:",
+			"labelDamage": "Damage:",
+			"labelRetaliate": "Retaliate:",
+			"accuracyMin": "Min.",
+			"accuracyAvg": "Avg",
+			"accuracyGood": "High",
+			"accuracyMax": "Guarant",
+			"retaliateYes": "YES",
+			"retaliateNo": "NO",
+			"damageMin":"Scratch",
+			"damageAvg": "Avg",
+			"damageGood": "Crit.",
+			"damageMax": "Death"
+		},		
+        "turn": {
+            "player": "PLAYER TURN",
+            "enemy": "ENEMY TURN"
+        },
+        "menu": {
+			"name": "Menu",
+			"btns": [
+				{
+					"internalName": "EndTurnButton",
+					"value": "End turn"
+				},
+				{
+					"internalName": "SaveButton",
+					"value": "Save game"
+				},
+                {
+					"internalName": "LoadButton",
+					"value": "Load game"
+				},
+                {
+					"internalName": "SettingsButton",
+					"value": "Settings"
+				},
+				{
+					"internalName": "ExitButton",
+					"value": "Main menu"
+				}
+			]
+        }
+    },
+	"preparation":{
+		"btns":[
+			{
+                "internalName": "NextLevel",
+				"value": "Start level"
+			},
+			{
+				"internalName": "HintButton",
+				"value": "Map data"
+            },
+			{
+                "internalName": "UpgradeList",
+				"value": "Upgrade list"
+			},
+			{
+				"internalName": "SaveButton",
+				"value": "Save game"
+            },
+			{
+				"internalName": "LoadButton",
+				"value": "Load game"
+            },
+			{
+				"internalName": "MainMenuButton",
+				"value": "Exit to main menu"
+            }
+		],
+		"mapName": "Map",
+		"mapHint": "Hint: camera acan be moved with W, A, S and D buttons."
+	},
+	"tileNames": [
+		{
+			"internalName": "tile_grass",
+			"value": "Grasslands"
+		},
+		{
+			"internalName": "tile_smallCave",
+			"value": "Cave"
+		},
+		{
+			"internalName": "tile_shallowWater",
+			"value": "Shallow waters"
+		},
+		{
+			"internalName": "tile_deepWater",
+			"value": "Sea"
+		},
+		{
+			"internalName": "tile_woods",
+			"value": "Woods"
+		},
+		{
+			"internalName": "tile_mountain",
+			"value": "Mointains"
+		},
+		{
+			"internalName": "tile_impassable",
+			"value": "Impassable"
+		}
+	],
+	"unitNames": [
+		{
+			"internalName": "u_infantry_pistol_enemy",
+			"value": "Scout"
+		},
+		{
+			"internalName": "u_infantry_rifle_enemy",
+			"value": "Rifleman"
+		},
+		{
+			"internalName": "u_infantry_pistol",
+			"value": "Light infantry"
+		},
+		{
+			"internalName": "u_infantry_rifle",
+			"value": "Breachers"
+		},
+		{
+			"internalName": "u_artillery_enemy",
+			"value": "Old artillery"
+		},
+		{
+			"internalName": "u_helicopter_enemy",
+			"value": "Old helicopter"
+		}
+	]
+}

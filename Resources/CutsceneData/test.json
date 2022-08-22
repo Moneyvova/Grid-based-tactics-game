@@ -1,0 +1,58 @@
+{
+	"actors": [
+		{
+			"internalName": "Untitled",
+			"baseBustName": "placeholder_img"
+		},
+		{
+			"internalName": "Untitled2",
+			"baseBustName": "placeholder_img"
+		}
+	],
+	"actions": [
+		{
+			"actor": 0,
+			"screenText": "test_dialog_1: slide from outside frame",
+			"offsetX": 600,
+			"slideDirection": 4
+		},
+		{
+			"actor": 1,
+			"screenText": "test_dialog_2: slide with mirrored from outside",
+			"mirrored": true,
+			"emotion": "shocked",
+			"offsetX": -600,
+			"slideDirection": 2
+		},
+		{
+			"actor": 0,
+			"screenText": "test_dialog_3: simple mirror",
+			"mirrored": true
+		},
+		{
+			"actor": 1,
+			"screenText": "test_dialog_4: mirror and offsetY",
+			"mirrored": true,
+			"offsetY": 60,
+			"slideDirection": 1
+		},
+		{
+			"actor": 1,
+			"screenText": "test_dialog_5: apply jump offset X",
+			"offsetX": 200
+		},
+		{
+			"actor": 0,
+			"screenText": "test_dialog_6: Incoming no text"
+		},
+		{
+			"actor": 0,
+			"emotion": "point",
+			"emotionWidth": 4
+		},
+		{
+			"actor": 0,
+			"screenText": "test_dialog_8: Return of text box"
+		}
+	]
+}

@@ -1,0 +1,420 @@
+{
+	"WeaponTypes": [
+		{
+			"WeaponTypeName": "w_pistol",
+			"ModelName": "m_pistol",
+			"MinRange": 1,
+			"MaxRange": 2
+		},
+		{
+			"WeaponTypeName": "w_rifle",
+			"ModelName": "m_rifle",
+			"MinRange": 1,
+			"MaxRange": 3
+		},
+		{
+			"WeaponTypeName": "w_artillery",
+			"ModelName": "",
+			"MinRange": 2,
+			"MaxRange": 5
+		},
+		{
+			"WeaponTypeName": "w_heligun",
+			"ModelName": "",
+			"MinRange": 2,
+			"MaxRange": 5
+		}
+	],
+	"WeaponGrades":[
+		{
+			"WeaponTypeID": 1,
+			"IconName": "w_pistol_bronze",
+			"Power": 4,
+			"Accuracy": 90
+		},
+		{
+			"WeaponTypeID": 1,
+			"IconName": "w_pistol_silver",
+			"Power": 5,
+			"Accuracy": 95
+		},
+		{
+			"WeaponTypeID": 1,
+			"IconName": "w_pistol_gold",
+			"Power": 6,
+			"Accuracy": 100
+		},
+		{
+			"WeaponTypeID": 2,
+			"IconName": "w_rifle_bronze",
+			"Power": 6,
+			"Accuracy": 75
+		},
+		{
+			"WeaponTypeID": 2,
+			"IconName": "w_rifle_silver",
+			"Power": 8,
+			"Accuracy": 75
+		},
+		{
+			"WeaponTypeID": 2,
+			"IconName": "w_rifle_gold",
+			"Power": 9,
+			"Accuracy": 80
+		},
+		{
+			"WeaponTypeID": 3,
+			"IconName": "w_artillery_bronze",
+			"Power": 10,
+			"Accuracy": 80
+		},
+		{
+			"WeaponTypeID": 3,
+			"IconName": "w_artillery_silver",
+			"Power": 12,
+			"Accuracy": 85
+		},
+		{
+			"WeaponTypeID": 3,
+			"IconName": "w_artillery_gold",
+			"Power": 15,
+			"Accuracy": 90
+		},
+		{
+			"WeaponTypeID": 4,
+			"IconName": "w_heligun_bronze",
+			"Power": 6,
+			"Accuracy": 100
+		},
+		{
+			"WeaponTypeID": 4,
+			"IconName": "w_heligun_silver",
+			"Power": 9,
+			"Accuracy": 100
+		},
+		{
+			"WeaponTypeID": 4,
+			"IconName": "w_heligun_gold",
+			"Power": 12,
+			"Accuracy": 100
+		}
+	],
+	"MoveTypes":[
+		{
+			"MoveTypeName": "mt_infantry",
+			"Value": 0
+		},
+		{
+			"MoveTypeName": "mt_infantryLight",
+			"Value": 1
+		},
+		{
+			"MoveTypeName": "mt_vehicle",
+			"Value": 2
+		},
+		{
+			"MoveTypeName": "mt_flyingVehicle",
+			"Value": 3
+		}
+	],
+	"Classes":[
+		{
+			"ClassName": "cl_infantry_pistol",
+			"ClassDesc": "cl_infantry_description",
+			"WeaponTypeID": 1,
+			"MoveTypeID": 2,
+			"MoveRange": 6,
+			"HealthBase": 20,
+			"AttackBase": 6,
+			"AccuracyBase": 95,
+			"DefenceBase": 1,
+			"SpeedBase": 2
+		},
+		{
+			"ClassName": "cl_infantry_rifle",
+			"ClassDesc": "cl_infantry_description",
+			"WeaponTypeID": 2,
+			"MoveTypeID": 1,
+			"MoveRange": 5,
+			"HealthBase": 22,
+			"AttackBase": 8,
+			"AccuracyBase": 90,
+			"DefenceBase": 1,
+			"SpeedBase": 1
+		},
+		{
+			"ClassName": "cl_artillery",
+			"ClassDesc": "cl_artillery_description",
+			"WeaponTypeID": 3,
+			"MoveTypeID": 3,
+			"MoveRange": 5,
+			"HealthBase": 25,
+			"AttackBase": 8,
+			"AccuracyBase": 70,
+			"DefenceBase": 2,
+			"SpeedBase": 0
+		},
+		{
+			"ClassName": "cl_helicopter",
+			"ClassDesc": "cl_helicopter_description",
+			"WeaponTypeID": 4,
+			"MoveTypeID": 4,
+			"MoveRange": 8,
+			"HealthBase": 25,
+			"AttackBase": 6,
+			"AccuracyBase": 90,
+			"DefenceBase": 2,
+			"SpeedBase": 0
+		}
+	],
+	"Units":[
+		{
+			"UnitName": "u_infantry_pistol_enemy",
+			"UnitDesc": "u_enemy_desc_generic",
+			"ClassID": 1,
+			"HealthModifier": -5,
+			"AttackModifier": -2,
+			"AccuracyModifier": -20,
+			"DefenceModifier": -1,
+			"SpeedModifier": -2
+		},
+		{
+			"UnitName": "u_infantry_rifle_enemy",
+			"UnitDesc": "u_enemy_desc_generic",
+			"ClassID": 2,
+			"HealthModifier": -5,
+			"AttackModifier": -2,
+			"AccuracyModifier": -10,
+			"DefenceModifier": -1,
+			"SpeedModifier": -1
+		},
+		{
+			"UnitName": "u_infantry_pistol",
+			"UnitDesc": "u_infantry_pistol_desc_generic",
+			"ClassID": 1,
+			"HealthModifier": 0,
+			"AttackModifier": 0,
+			"AccuracyModifier": 0,
+			"DefenceModifier": 0,
+			"SpeedModifier": 0
+		},
+		{
+			"UnitName": "u_infantry_rifle",
+			"UnitDesc": "u_infantry_pistol_desc_generic",
+			"ClassID": 2,
+			"HealthModifier": 0,
+			"AttackModifier": 0,
+			"AccuracyModifier": 0,
+			"DefenceModifier": 0,
+			"SpeedModifier": 0
+		},
+		{
+			"UnitName": "u_artillery_enemy",
+			"UnitDesc": "u_enemy_desc_generic",
+			"ClassID": 3,
+			"HealthModifier": -5,
+			"AttackModifier": -5,
+			"AccuracyModifier": -10,
+			"DefenceModifier": -2,
+			"SpeedModifier": 0
+		},
+		{
+			"UnitName": "u_helicopter_enemy",
+			"UnitDesc": "u_enemy_desc_generic",
+			"ClassID": 4,
+			"HealthModifier": -5,
+			"AttackModifier": -5,
+			"AccuracyModifier": -10,
+			"DefenceModifier": -1,
+			"SpeedModifier": 0
+		}
+	],
+	"VictoryConds":[
+		{
+			"CondName": "cond_rout"
+		},
+		{
+			"CondName": "cond_defend"
+		},
+		{
+			"CondName": "cond_reach"
+		}		
+	],
+	"Tiles":[
+		{
+			"TileName": "tile_grass",
+			"TerrainPreset": "grass1",
+			"TileHinderType": 0,
+			"MoveCost": 0,
+			"AtkModifier": 0,
+			"DefModifier": 0,
+			"AccModifier": 0
+		},
+		{
+			"TileName": "tile_smallCave",
+			"TerrainPreset": "grass1",
+			"TileHinderType": 6,
+			"MoveCost": 0,
+			"AtkModifier": 0,
+			"DefModifier": 1,
+			"AccModifier": 0
+		},
+		{
+			"TileName": "tile_shallowWater",
+			"TerrainPreset": "shallowWater1",
+			"TileHinderType": 2,
+			"MoveCost": 2,
+			"AtkModifier": -1,
+			"DefModifier": 1,
+			"AccModifier": -5
+		},
+		{
+			"TileName": "tile_deepWater",
+			"TerrainPreset": "deepWater1",
+			"TileHinderType": 3,
+			"MoveCost": 0,
+			"AtkModifier": 0,
+			"DefModifier": 0,
+			"AccModifier": 0
+		},
+		{
+			"TileName": "tile_woods",
+			"TerrainPreset": "woods1",
+			"MoveCost": 1,
+			"TileHinderType": 0,
+			"AtkModifier": 0,
+			"DefModifier": 2,
+			"AccModifier": 0
+		},
+		{
+			"TileName": "tile_mountain",
+			"TerrainPreset": "mountain1",
+			"TileHinderType": 2,
+			"MoveCost": 2,
+			"AtkModifier": 0,
+			"DefModifier": 2,
+			"AccModifier": 0
+		},
+		{
+			"TileName": "tile_impassable",
+			"TerrainPreset": "wall1",
+			"TileHinderType": 7,
+			"MoveCost": 0,
+			"AtkModifier": 0,
+			"DefModifier": 0,
+			"AccModifier": 0
+		}
+	],
+	"Maps":[
+		{
+			"MapName": "map_name1",
+			"MapFile": "map1",
+			"VictoryCond": 1
+		},
+		{
+			"MapName": "map_name2",
+			"MapFile": "map1",
+			"VictoryCond": 2
+		}
+	],
+	"TilePool":[
+		{
+			"MapID": 1,
+			"TileID": 1
+		},
+		{
+			"MapID": 1,
+			"TileID": 2
+		},
+		{
+			"MapID": 1,
+			"TileID": 3
+		},
+		{
+			"MapID": 1,
+			"TileID": 4
+		},
+		{
+			"MapID": 1,
+			"TileID": 5
+		},
+		{
+			"MapID": 1,
+			"TileID": 6
+		},
+		{
+			"MapID": 1,
+			"TileID": 7
+		},
+		{
+			"MapID": 2,
+			"TileID": 1
+		},
+		{
+			"MapID": 2,
+			"TileID": 2
+		},
+		{
+			"MapID": 2,
+			"TileID": 3
+		},
+		{
+			"MapID": 2,
+			"TileID": 4
+		},
+		{
+			"MapID": 2,
+			"TileID": 5
+		},
+		{
+			"MapID": 2,
+			"TileID": 6
+		},
+		{
+			"MapID": 2,
+			"TileID": 7
+		}
+	],
+	"UnitPool":[
+		{
+			"MapID": 1,
+			"UnitID": 1
+		},
+		{
+			"MapID": 1,
+			"UnitID": 2
+		},
+		{
+			"MapID": 1,
+			"UnitID": 3
+		},
+		{
+			"MapID": 1,
+			"UnitID": 4
+		},
+		{
+			"MapID": 2,
+			"UnitID": 1
+		},
+		{
+			"MapID": 2,
+			"UnitID": 2
+		},
+		{
+			"MapID": 2,
+			"UnitID": 3
+		},
+		{
+			"MapID": 2,
+			"UnitID": 4
+		},
+		{
+			"MapID": 2,
+			"UnitID": 5
+		},
+		{
+			"MapID": 2,
+			"UnitID": 6
+		}
+	]
+}

@@ -1,0 +1,255 @@
+{
+    "localizationName": "Русский",
+	"saveLabel": "Сохранить игру",
+	"loadLabel": "Загрузить игру",
+	"saveBtnLabel": "Сохранить",
+	"loadBtnLabel": "Загрузить",
+	"deleteBtnLabel": "Удалить",
+	"actor1": "Неизвестный",
+	"actor2": "Генерал",
+    "mainMenu": {
+        "btns": [
+            {
+                "internalName": "ButtonStart",
+                "value": "Начать игру"
+            },
+            {
+                "internalName": "ButtonLoad",
+                "value": "Загрузить"
+            },
+            {
+                "internalName": "ButtonSettings",
+                "value": "Настройки"
+            },
+            {
+                "internalName": "ButtonCredits",
+                "value": "Титры"
+            },
+            {
+                "internalName": "ButtonExit",
+                "value": "Выход"
+            }
+        ]
+    },
+    "settings": {
+        "panelBtns": [
+			{
+				"internalName": "ControlsSettings",
+				"value": "Управление"
+			},
+			{
+				"internalName": "AudioSettings",
+				"value": "Звук"
+			},
+			{
+				"internalName": "GraphicsSettings",
+				"value": "Графика"
+			},
+			{
+				"internalName": "GameplaySettings",
+				"value": "Игра"
+			}
+		],
+        "controlPanelName": "Настройки управления",
+        "controls": [
+            {
+                "internalName": "CameraUp",
+                "value": "Камера вверх"
+            },
+            {
+                "internalName": "CameraDown",
+                "value": "Камера вниз"
+            },
+            {
+                "internalName": "CameraLeft",
+                "value": "Камера влево"
+            },
+            {
+                "internalName": "CameraRight",
+                "value": "Камера вправо"
+            },
+            {
+                "internalName": "EndTurn",
+                "value": "Закончить ход"
+            },
+            {
+                "internalName": "OpenMenu",
+                "value": "Открыть меню"
+            },
+            {
+                "internalName": "CancelAction",
+                "value": "Отменить действие"
+            }
+        ],
+        "audioPanelName": "Настройки звука",
+        "audioBtns": [
+            {
+                "internalName": "unity_sound",
+                "value": "Звуковое сопровождение"
+            }
+        ],
+        "gfxPanelName": "Настройки отображения",
+        "gfxBtns": [
+            {
+                "internalName": "unity_quality",
+                "value": "Качество графики"
+            }
+        ],
+		"gfxPresets":[
+			"Минимум",
+			"Оч. низкое",
+			"Низкое",
+			"Среднее",
+			"Высокое",
+			"Оч. высокое",
+			"Максимум"
+		],
+        "gpPanelName": "Настройки игрового процесса",
+        "gpBtns": [
+            {
+                "internalName": "unity_txt_language",
+                "value": "Язык"
+            },
+			{
+                "internalName": "unity_borderscroll",
+                "value": "Прокрутка мышкой"
+            },
+			{
+                "internalName": "unity_highlight",
+                "value": "Подсветка юнитов"
+            }
+        ]
+    },
+    "gameplayField": {
+		"combatOutcome":{
+			"labelAccuracy": "Точность:",
+			"labelDamage": "Урон:",
+			"labelRetaliate": "Отпор:",
+			"accuracyMin": "Миним.",
+			"accuracyAvg": "Обычная",
+			"accuracyGood": "Высокая",
+			"accuracyMax": "Гарант",
+			"retaliateYes": "ДА",
+			"retaliateNo": "НЕТ",
+			"damageMin":"Царапина",
+			"damageAvg": "Обычный",
+			"damageGood": "Критич.",
+			"damageMax": "Смерть"
+		},		
+        "turn": {
+            "player": "ХОД ИГРОКА",
+            "enemy": "ХОД ПРОТИВНИКА"
+        },
+        "menu": {
+			"name": "Меню",
+			"btns": [
+				{
+					"internalName": "EndTurnButton",
+					"value": "Закончить ход"
+				},
+				{
+					"internalName": "SaveButton",
+					"value": "Сохранить"
+				},
+                {
+					"internalName": "LoadButton",
+					"value": "Загрузить"
+				},
+                {
+					"internalName": "SettingsButton",
+					"value": "Настройки"
+				},
+				{
+					"internalName": "ExitButton",
+					"value": "Выход"
+				}
+			]
+        }
+    },
+	"preparation":{
+		"btns":[
+			{
+                "internalName": "NextLevel",
+				"value": "Запуск уровня"
+			},
+			{
+				"internalName": "HintButton",
+				"value": "Данные о карте"
+            },
+			{
+                "internalName": "UpgradeList",
+				"value": "Список улучшений"
+			},
+			{
+				"internalName": "SaveButton",
+				"value": "Сохранить точку"
+            },
+			{
+				"internalName": "LoadButton",
+				"value": "Загрузить точку"
+            },
+			{
+				"internalName": "MainMenuButton",
+				"value": "Выйти в главное меню"
+            }
+		],
+		"mapName": "Карта",
+		"mapHint": "Подсказка: камеру можно мерещать с помощью кнопок W, A, S и D."
+	},
+	"tileNames": [
+		{
+			"internalName": "tile_grass",
+			"value": "Равнина"
+		},
+		{
+			"internalName": "tile_smallCave",
+			"value": "Пещера"
+		},
+		{
+			"internalName": "tile_shallowWater",
+			"value": "Мелководье"
+		},
+		{
+			"internalName": "tile_deepWater",
+			"value": "Глубоководье"
+		},
+		{
+			"internalName": "tile_woods",
+			"value": "Лес"
+		},
+		{
+			"internalName": "tile_mountain",
+			"value": "Горная местность"
+		},
+		{
+			"internalName": "tile_impassable",
+			"value": "Непроходимо"
+		}
+	],
+	"unitNames": [
+		{
+			"internalName": "u_infantry_pistol_enemy",
+			"value": "Разведчик"
+		},
+		{
+			"internalName": "u_infantry_rifle_enemy",
+			"value": "Штурмовик"
+		},
+		{
+			"internalName": "u_infantry_pistol",
+			"value": "Легкий пехотинец"
+		},
+		{
+			"internalName": "u_infantry_rifle",
+			"value": "Штурм отряд"
+		},
+		{
+			"internalName": "u_artillery_enemy",
+			"value": "Устаревшая артиллерия"
+		},
+		{
+			"internalName": "u_helicopter_enemy",
+			"value": "Устаревший вертолёт"
+		}
+	]
+}

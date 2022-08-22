@@ -1,0 +1,468 @@
+{
+    "tableNames": [
+        "WeaponTypes",
+		"WeaponGrades",
+		"MoveTypes",
+		"Classes",
+		"Units",
+		"VictoryConds",
+		"Tiles",
+		"Maps",
+		"TilePool",
+		"UnitPool"
+    ],
+    "tables": [
+        {
+            "tableName": "WeaponTypes",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "WeaponTypeName",
+                    "dataType": 1,
+                    "autoIncrement": false,
+					"length": 255,
+                    "columnNullable": true
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "ModelName",
+                    "dataType": 1,
+                    "autoIncrement": false,
+					"length": 255,
+                    "columnNullable": true
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "MinRange",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "MaxRange",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                }
+            ]
+        },
+		{
+            "tableName": "WeaponGrades",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "WeaponTypeID",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "WeaponTypes",
+					"foreignColumn": "ID"
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "IconName",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": true
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "Power",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "Accuracy",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                }
+            ]
+        },
+		{
+            "tableName": "MoveTypes",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "MoveTypeName",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "Value",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                }
+            ]
+        },
+		{
+            "tableName": "Classes",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "ClassName",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "ClassDesc",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": true
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "WeaponTypeID",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "WeaponTypes",
+					"foreignColumn": "ID"
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "MoveTypeID",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "MoveTypes",
+					"foreignColumn": "ID"
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "MoveRange",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "HealthBase",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "AttackBase",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "AccuracyBase",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "DefenceBase",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "SpeedBase",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                }
+            ]
+        },
+		{
+            "tableName": "Units",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "UnitName",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "UnitDesc",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": true
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "ClassID",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "Classes",
+					"foreignColumn": "ID"
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "HealthModifier",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "AttackModifier",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "AccuracyModifier",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "DefenceModifier",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "SpeedModifier",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                }
+            ]
+        },
+		{
+            "tableName": "VictoryConds",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "CondName",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                }
+            ]
+        },
+		{
+            "tableName": "Tiles",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "TileName",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "TerrainPreset",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": true
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "TileHinderType",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "MoveCost",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "AtkModifier",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "DefModifier",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "AccModifier",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                }
+            ]
+        },
+		{
+            "tableName": "Maps",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "MapName",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 0,
+                    "columnName": "MapFile",
+                    "dataType": 1,
+					"length": 255,
+                    "autoIncrement": false,
+                    "columnNullable": true
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "VictoryCond",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "VictoryConds",
+					"foreignColumn": "ID"
+                }
+            ]
+        },
+		{
+            "tableName": "TilePool",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "MapID",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "Maps",
+					"foreignColumn": "ID"
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "TileID",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "Tiles",
+					"foreignColumn": "ID"
+                }
+            ]
+        },
+		{
+            "tableName": "UnitPool",
+            "columnData": [
+                {
+                    "keyType": 1,
+                    "columnName": "ID",
+                    "dataType": 0,
+                    "autoIncrement": true,
+                    "columnNullable": false
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "MapID",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "Maps",
+					"foreignColumn": "ID"
+                },
+				{
+                    "keyType": 2,
+                    "columnName": "UnitID",
+                    "dataType": 0,
+                    "autoIncrement": false,
+                    "columnNullable": false,
+					"foreignTable": "Units",
+					"foreignColumn": "ID"
+                }
+            ]
+        }
+    ]
+}

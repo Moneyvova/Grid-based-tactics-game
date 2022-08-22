@@ -1,0 +1,201 @@
+{
+	"actors": [
+		{
+			"internalName": "Untitled_player",
+			"baseBustName": "placeholder_img"
+		},
+		{
+			"internalName": "Untitled_general",
+			"baseBustName": "placeholder_img"
+		}
+	],
+	"actions": [
+		{
+			"actor": 0,
+			"screenText": "Где же этот кабинет?!",
+			"emotion": "confused",
+			"emotionWidth": 2.8,
+			"offsetX": 600
+		},
+		{
+			"actor": 0,
+			"screenText": "Да где же?!",
+			"emotion": "confused",
+			"emotionWidth": 2.8,
+			"mirrored": true,
+			"offsetX": -100,
+			"slideDirection": 2
+		},
+		{
+			"actor": 0,
+			"screenText": "Вот он!!!",
+			"emotion": "",
+			"mirrored": true
+		},
+		{
+			"actor": 0,
+			"screenText": "Караулов Тарас Атосович, прибыл на инструктаж!",
+			"emotion": "",
+			"offsetX": -100
+		},
+		{
+			"actor": 1,
+			"screenText": "Вольно, кадет. В чём причина вашего опоздания?",
+			"mirrored": true,
+			"offsetX": -500,
+			"slideDirection": 2
+		},
+		{
+			"actor": 0,
+			"screenText": "Эм...Я искал свой тактоплан.",
+			"emotion": "confused",
+			"emotionWidth": 2.8,
+			"offsetX": -100,
+			"slideDirection": 2
+		},
+		{
+			"actor": 1,
+			"screenText": "Спокойней, кадет. Я не кусаюсь, да и вы не под трибуналом.",
+			"emotion": ""
+		},
+		{
+			"actor": 0,
+			"screenText": "...",
+			"emotion": "confused",
+			"emotionWidth": 2.8
+		},
+		{
+			"actor": 0,
+			"screenText": "Фу-у-ух. А я боялся что...",
+			"offsetX": 50,
+			"slideDirection": 4
+		},
+		{
+			"actor": 1,
+			"screenText": "Это хорошо, что вы свой тактоплан не забыли. Ведь как раз сегодня должен состояться ваш первый инструктаж по работе с данным прибором."
+		},
+		{
+			"actor": 0,
+			"screenText": "Погодите, сэр!",
+			"emotion": "point",
+			"emotionWidth": 4,
+			"offsetX": 200
+		},
+		{
+			"actor": 1,
+			"screenText": "Что вас смущает, кадет?"
+		},
+		{
+			"actor": 0,
+			"screenText": "Просто мой тактоплан...",
+			"emotion": "confused",
+			"emotionWidth": 2.8,
+			"offsetX": -50
+		},
+		{
+			"actor": 1,
+			"screenText": "Смелее, кадет."
+		},
+		{
+			"actor": 0,
+			"screenText": "Он несколько недоукоплектован...",
+			"emotion": "confused",
+			"emotionWidth": 2.8
+		},
+		{
+			"actor": 1,
+			"screenText": "Показывайте."
+		},
+		{
+			"actor": 0,
+			"offsetX": 50,
+			"emotion": "confused",
+			"emotionWidth": 2.8
+		},
+		{
+			"actor": 1,
+			"screenText": "Странные у вас тут метки..."
+		},
+		{
+			"actor": 0,
+			"offsetX": -150,
+			"screenText": "...",
+			"emotion": "confused",
+			"mirrored": true,
+			"emotionWidth": 2.8
+		},
+		{
+			"actor": 1,
+			"screenText": "Неважно. Краткий экскурс в управление тактопланом.",
+			"mirrored": true
+		},
+		{
+			"actor": 1,
+			"screenText": "Перемещение вверх на W... Вниз - S, Влево - A, Вправо - D... Также это можно делать с помощью указки на нужном угле экрана.",
+			"mirrored": true
+		},
+		{
+			"actor": 0,
+			"offsetX": -150,
+			"screenText": "Знал бы я ещё где они...",
+			"mirrored": true,
+			"emotion": "confused",
+			"emotionWidth": 2.8
+		},
+		{
+			"actor": 1,
+			"screenText": "Выбор отряда происходит через нажатие [Левой Кнопки Мыши(ЛКМ)]."
+		},
+		{
+			"actor": 0,
+			"screenText": "Какая ещё мышь?",
+			"emotion": "confused",
+			"emotionWidth": 2.8
+		},
+		{
+			"actor": 1,
+			"screenText": "Перемещение по отмеченному [синим] полю происходит через [Правую Кнопку Мыши(ПКМ)]."
+		},
+		{
+			"actor": 1,
+			"screenText": "После перемещения отряда появляется панель действий: [Красная кнопка] атаки и [Синяя] - ожидания."
+		},
+		{
+			"actor": 1,
+			"screenText": "Ожидание завершает ход для выбранного юнита. Атака доступна только когда есть цели в зоне атаки, отмеченной [Оранжевым] цветом."
+		},
+		{
+			"actor": 1,
+			"screenText": "Выбор атаки подсвечивает все доступные цели. Для проведения атаки нажмите на нужной цели (ПКМ). Это также завершит ход для отряда."
+		},
+		{
+			"actor": 1,
+			"screenText": "Отмена действий происходит через нажатие (ЛКМ) вне кнопок."
+		},
+		{
+			"actor": 1,
+			"screenText": "После завершения действий следует окончить ход либо через меню либо нажав (E)."
+		},
+		{
+			"actor": 1,
+			"screenText": "Надеюсь все понятно?"
+		},
+		{
+			"actor": 0,
+			"screenText": "Н-нет...",
+			"emotion": "confused",
+			"emotionWidth": 2.8
+		},
+		{
+			"actor": 1,
+			"screenText": "Правильный ответ. Все познаётся на практике."
+		},
+		{
+			"actor": 1,
+			"screenText": "Так что просто пройдите текущую симуляцию. Удачи, кадет.",
+			"emotion": "point",
+			"emotionWidth": 4,
+			"offsetX": -200
+		}
+	]
+}
